@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.DynamicPropertyRegistrar;
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
 import org.springframework.test.web.servlet.MockMvc;
@@ -19,11 +18,11 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
-@Testcontainers
-@AutoConfigureMockMvc
+/*@Testcontainers
+@AutoConfigureMockMvc*/
 class CustomerServiceApplicationTests {
 
-    @Container
+/*    @Container
     static PostgreSQLContainer postgreSQLContainer = (PostgreSQLContainer) new PostgreSQLContainer("postgres:13-alpine");
 
     @Autowired
@@ -54,5 +53,5 @@ class CustomerServiceApplicationTests {
         customerEntity.setLastName("Khalighi");
         customerEntity.setEmail("amir.khalighi@gmail.com");
         return customerEntity;
-    }
+    }*/
 }

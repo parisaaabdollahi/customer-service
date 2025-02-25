@@ -1,9 +1,10 @@
 package org.microservice.customerservice.Service;
 
-import jakarta.transaction.Transactional;
+
 import org.microservice.customerservice.entity.CustomerEntity;
 import org.microservice.customerservice.repository.CustomerRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 @Service
